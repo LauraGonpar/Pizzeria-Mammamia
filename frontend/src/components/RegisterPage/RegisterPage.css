@@ -1,0 +1,43 @@
+.register-page {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../src/assets/imgs/header.jpg");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 10px;
+  width: 100vw;
+  background-color: #fcfcfc;
+  color: black;
+  margin-top: 70px;
+}
+.register-page- {
+  background: rgba(255, 255, 255, 0.637);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+}
+input {
+  width: 300px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(48, 45, 45);
+}
+.register-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+h4 {
+  text-align: center;
+}

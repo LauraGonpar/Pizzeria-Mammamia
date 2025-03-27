@@ -1,0 +1,72 @@
+.pizza-container {
+  width: 300px;
+  margin: 80px 20px 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  color: black;
+}
+
+.pizza-container:hover {
+  transform: scale(1.02);
+}
+
+.pizza-image {
+  width: 100%;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d35400;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 16px;
+  color: #444;
+  margin: 10px 0;
+  text-align: justify;
+}
+
+h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #e67e22;
+}
+
+.pizza-ingredients {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pizza-ingredients li {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5px 20px 0px 0px;
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+.btn-add {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #07040e;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.btn-add:hover {
+  background-color: #0d2b16;
+}
