@@ -3,7 +3,7 @@ import "./Pizza.css";
 
 const Pizzas = () => {
   const [pizza, setPizza] = useState(null);
-  const pizzaId = "p001"; // ID fijo por ahora
+  const pizzaId = "p001";
 
   useEffect(() => {
     const fetchPizza = async () => {

@@ -1,36 +1,82 @@
+// import "./Navbar.css";
+
+// const Navbar = () => {
+//   const total = "25.000";
+//   const token = false;
+//   return (
+//     <nav className="navbar">
+//       <div className="name">¡Pizzería Mamma Mía!</div>
+//       <ul className="nav-links">
+//         <li>
+//           <a href="#">🍕 Home</a>
+//         </li>
+//         {token ? (
+//           <>
+//             <li>
+//               <a href="#">🔓 Profile</a>
+//             </li>
+//             <li>
+//               <a href="#">🔒 Logout</a>
+//             </li>
+//           </>
+//         ) : (
+//           <>
+//             <li>
+//               <a href="#">🔐 Login</a>
+//             </li>
+//             <li>
+//               <a href="#">🔐 Register</a>
+//             </li>
+//           </>
+//         )}
+//         <li>
+//           <a href="#">🛒 Total: {token ? `$${total}` : "Inicia sesión"}</a>
+//         </li>
+//       </ul>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   const total = "25.000";
-  const token = false;
+  const token = true; // Simula si el usuario está autenticado
+
   return (
     <nav className="navbar">
       <div className="name">¡Pizzería Mamma Mía!</div>
       <ul className="nav-links">
         <li>
-          <a href="#">🍕 Home</a>
+          <Link to="/">🍕 Home</Link>
         </li>
         {token ? (
           <>
             <li>
-              <a href="#">🔓 Profile</a>
+              <Link to="/profile">🔓 Profile</Link>
             </li>
             <li>
-              <a href="#">🔒 Logout</a>
+              <Link to="/logout">🔒 Logout</Link>{" "}
+              {/* esta ruta es opcional por ahora */}
             </li>
           </>
         ) : (
           <>
             <li>
-              <a href="#">🔐 Login</a>
+              <Link to="/login">🔐 Login</Link>
             </li>
             <li>
-              <a href="#">🔐 Register</a>
+              <Link to="/register">🔐 Register</Link>
             </li>
           </>
         )}
         <li>
-          <a href="#">🛒 Total: {token ? `$${total}` : "Inicia sesión"}</a>
+          <Link to="/cart">
+            🛒 Total: {token ? `$${total}` : "Inicia sesión"}
+          </Link>
         </li>
       </ul>
     </nav>
